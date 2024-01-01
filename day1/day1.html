@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM1</title>
+    <style>
+        body{
+            background-color: rgb(219, 171, 171);
+        }
+        .heading{
+            color: rgb(137, 162, 184);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="heading" id="title">I am Learning DOM</h1>
+        <p style="color: rgb(100, 145, 184);">Lorem ipsum dolor sit amet <span style="display: none;">hello ji</span></p>
+        <h2>I am Prikshit Sharma</h2>
+        <h2>I am From Himachal Pradesh</h2>
+        <br>
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li  class="list-item">three</li>
+            <li class="list-item">Four</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!-- 
+   document.getElementById('title').id // It gives id
+   document.getElementById('title').className // it gives class name
+
+    For Getting and Setting the attributes
+   @ document.getElementById('title').getAttribute('id') // it would give the id and same goes for class vice versa
+  document.getElementById('title').setAttribute('class','bawa') // always overwrite the value
+
+  for styling
+title.style.backgroundcolor='green';
+
+# for getting Content 3 types
+1> innerHTML > html tags bi support krta
+2> innerText > jo page pe display hoti sirf wo dhikti
+3> TextContent > hidden css properties bi dhik jati
+
+
+#     Query Selectors
+document.querySelector('h2') // always give the first h2
+document.querySelector('#id') // always give the id
+document.querySelector('.class') // always give the class
+  
+
+# Select Multiple Elements
+1 > document.querySelectorAll('li') // gives node list
+It Gives NodeList , same like array but not the array
+Const templist=document.querySelectorAll('li')
+temp[0].style.backGroundColor='pink'
+** we can use forEach loop in nodelist
+templist.forEach( function(li){
+li.style.backGroundcolor='green';
+})
+
+2> document.getElementsByClassName('list-item') // gives html collection
+Convert Arrylist to Array
+ Array.from(templist);
+myconarray.forEach( function(){
+    li.style.background.Color='pink'
+})
+
+
+-->
