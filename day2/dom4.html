@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Or Code</title>
+</head>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    <script>
+        // function addLanguage(langName){
+        //     document.createElement('li');
+        //     li.innerHTML=`${langName}`;
+        //     document.querySelector('.language').appendChild(li)
+        // }
+        // addLanguage("python");
+        // addLanguage("typescript");
+       
+
+        function addlang(langName){
+           const li = document.createElement('li')
+           li.appendChild(document.createTextNode(langName))
+           document.querySelector('.language').appendChild(li);
+        }
+        addlang("golang")
+
+
+        //Edit
+        const secondLamg =document.querySelector('li:nth-child(2)');
+        const newLi=document.createElement('li');
+        newli.textContent="mojo"
+        secondLamg.replaceWith(newLi)
+
+        // delete
+        const lastlang=document.querySelector('li:last-child');
+        lastlang.remove();
+
+    </script>
+</body>
+</html>
